@@ -8,32 +8,20 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>logprocess-es</artifactId>
+    <artifactId>logprocess-common</artifactId>
 
-    <description>log process elasticsearch module</description>
+    <description>logprocess 通用模块</description>
 
     <properties>
-        <!-- 自定义版本 -->
-        <elasticsearch.version>7.8.0</elasticsearch.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

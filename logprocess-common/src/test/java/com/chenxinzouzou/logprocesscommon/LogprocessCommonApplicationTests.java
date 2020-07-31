@@ -1,14 +1,13 @@
-package com.chenxinzouzou.logprocesselasticsearch;
+package com.chenxinzouzou.logprocesscommon;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LogprocessElasticsearchApplicationTests {
+class LogprocessCommonApplicationTests {
 
     @Test
     void contextLoads() {
-
     }
 
 }
