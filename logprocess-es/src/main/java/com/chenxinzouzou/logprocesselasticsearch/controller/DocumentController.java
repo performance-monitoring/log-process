@@ -21,8 +21,8 @@ public class DocumentController {
     @Resource
     private DocumentService documentService;
 
-    @PostMapping("{index}/{id}")
-    public CommonResult postDocument(@PathVariable("index") String index, @PathVariable("id") String id,@PathVariable("jsonData") String jsonData) throws IOException {
-        return documentService.indexDocment(index, id, jsonData);
+    @PostMapping("")
+    public CommonResult postDocument(String index,String id,String data) throws IOException {
+        return documentService.indexDocment(index, id, data);
     }
 }
