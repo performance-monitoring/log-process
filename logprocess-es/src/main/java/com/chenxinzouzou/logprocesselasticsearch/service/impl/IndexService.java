@@ -23,4 +23,5 @@ public interface IndexService {
      **/
     CommonResult<CreateIndexResponse> creatIndex(String index) throws IOException;
 
+    CommonResult deleteIndex(String index) throws IOException;
 }

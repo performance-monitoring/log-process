@@ -3,10 +3,7 @@ package com.chenxinzouzou.logprocesselasticsearch.controller;
 import com.chenxinzouzou.logprocesscommon.CommonResult;
 import com.chenxinzouzou.logprocesselasticsearch.service.impl.IndexService;
 import org.elasticsearch.client.indices.CreateIndexResponse;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.io.IOException;
@@ -25,5 +22,10 @@ public class IndexController {
     @PostMapping("/{index}")
     public CommonResult<CreateIndexResponse> creatIndex(@PathVariable("index") String index) throws IOException {
         return indexService.creatIndex(index);
+    }
+
+    @DeleteMapping("/{index}")
+    public CommonResult deleteDocumentByIndexId(@PathVariable("index") String indexm) throws IOException {
+        return indexService.deleteIndex(indexm);
     }
 }

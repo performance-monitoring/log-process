@@ -12,4 +12,9 @@ public interface DocumentService {
 
     CommonResult indexDocment(String index, String id, String jsonData) throws IOException;
 
+    CommonResult getAllDocment() throws IOException;
+
+    CommonResult getDocmentByIndexAndId(String index, String id) throws IOException;
+
+    CommonResult deleteDocmentByIndexAndId(String index, String id) throws IOException;
 }
